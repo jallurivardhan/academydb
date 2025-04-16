@@ -1,0 +1,205 @@
+/* Custom styles for AcademyDB Management System */
+
+/* Global Styles */
+:root {
+    --primary-color: #1a73e8;
+    --secondary-color: #34a853;
+    --warning-color: #fbbc05;
+    --danger-color: #ea4335;
+    --light-bg: #f8f9fa;
+    --dark-bg: #202124;
+    --text-primary: #202124;
+    --text-secondary: #5f6368;
+    --border-color: #dadce0;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    color: var(--text-primary);
+    background-color: var(--light-bg);
+}
+
+/* Navigation */
+.navbar {
+    background-color: var(--primary-color) !important;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.navbar-brand {
+    font-weight: 500;
+}
+
+/* Cards */
+.card {
+    border: none;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.card:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+.card-header {
+    border-bottom: 1px solid var(--border-color);
+    background-color: white;
+    font-weight: 500;
+}
+
+/* Dashboard Stats */
+.stats-card {
+    padding: 1.5rem;
+    text-align: center;
+    color: white;
+    border-radius: 8px;
+    margin-bottom: 1rem;
+}
+
+.stats-card.students {
+    background: linear-gradient(135deg, #1a73e8, #4285f4);
+}
+
+.stats-card.faculty {
+    background: linear-gradient(135deg, #34a853, #40c057);
+}
+
+.stats-card.courses {
+    background: linear-gradient(135deg, #00bcd4, #03a9f4);
+}
+
+.stats-card.results {
+    background: linear-gradient(135deg, #ffa726, #fb8c00);
+}
+
+.stats-number {
+    font-size: 2.5rem;
+    font-weight: 500;
+    margin-bottom: 0.5rem;
+}
+
+.stats-label {
+    font-size: 1rem;
+    opacity: 0.9;
+}
+
+/* Buttons */
+.btn-primary {
+    background-color: var(--primary-color);
+    border-color: var(--primary-color);
+}
+
+.btn-primary:hover {
+    background-color: #1557b0;
+    border-color: #1557b0;
+}
+
+/* Tables */
+.table {
+    background-color: white;
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+.table thead th {
+    background-color: var(--light-bg);
+    border-bottom: 2px solid var(--border-color);
+    color: var(--text-secondary);
+    font-weight: 500;
+}
+
+/* Forms */
+.form-control {
+    border: 1px solid var(--border-color);
+    border-radius: 4px;
+    padding: 0.5rem 1rem;
+}
+
+.form-control:focus {
+    border-color: var(--primary-color);
+    box-shadow: 0 0 0 2px rgba(26,115,232,0.2);
+}
+
+/* Alerts */
+.alert {
+    border: none;
+    border-radius: 8px;
+}
+
+.alert-success {
+    background-color: #e6f4ea;
+    color: #1e8e3e;
+}
+
+.alert-danger {
+    background-color: #fce8e6;
+    color: #d93025;
+}
+
+/* Modal */
+.modal-content {
+    border-radius: 8px;
+    border: none;
+}
+
+.modal-header {
+    border-bottom: 1px solid var(--border-color);
+    background-color: var(--light-bg);
+}
+
+/* Badges */
+.badge {
+    padding: 0.5em 1em;
+    border-radius: 4px;
+}
+
+/* Custom Classes for Student Dashboard */
+.student-welcome {
+    background: linear-gradient(135deg, var(--primary-color), #4285f4);
+    color: white;
+    padding: 2rem;
+    border-radius: 8px;
+    margin-bottom: 2rem;
+}
+
+.student-welcome h1 {
+    font-size: 2rem;
+    margin-bottom: 0.5rem;
+}
+
+.student-stats {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 1rem;
+    margin-bottom: 2rem;
+}
+
+.action-card {
+    background: white;
+    padding: 1.5rem;
+    border-radius: 8px;
+    text-align: center;
+    transition: transform 0.2s;
+}
+
+.action-card:hover {
+    transform: translateY(-2px);
+}
+
+.action-card i {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+    color: var(--primary-color);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .stats-card {
+        margin-bottom: 1rem;
+    }
+    
+    .student-stats {
+        grid-template-columns: 1fr;
+    }
+} 

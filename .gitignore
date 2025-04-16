@@ -1,0 +1,40 @@
+# Configuration files with sensitive data
+config/database.php
+
+# Environment files
+.env
+*.env
+
+# Dependency directories
+vendor/
+node_modules/
+
+# IDE specific files
+.idea/
+.vscode/
+*.sublime-workspace
+*.sublime-project
+
+# Operating System files
+.DS_Store
+Thumbs.db
+
+# Backup files
+*.bak
+*.swp
+*~
+
+# Uploaded files
+uploads/*
+!uploads/.gitkeep
+
+# Log files
+*.log
+logs/
+
+# Cache files
+*.cache
+
+# Database backups
+backups/*
+!backups/.gitkeep 
